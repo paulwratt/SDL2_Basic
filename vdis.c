@@ -4,6 +4,9 @@
    dashxdr@gmail.com
 */
 #include <stdarg.h>
+#include <stdlib.h>
+#include <stdio.h>
+
 #include "misc.h"
 
 static int get_istring(char *put, step *s)

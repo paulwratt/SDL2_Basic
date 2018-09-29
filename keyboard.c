@@ -5,7 +5,7 @@
 */
 #include <string.h>
 #include <ctype.h>
-#include <SDL.h>
+
 #include "misc.h"
 
 #define ENDMARK 0xaabacada

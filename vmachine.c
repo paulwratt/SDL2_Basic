@@ -5,8 +5,10 @@
 */
 #include <string.h>
 #include <stdlib.h>
-#include <math.h>
+#include <stdio.h>
 #include <stdarg.h>
+#include <math.h>
+
 #include "misc.h"
 
 #define TD(name) void name(bc *bc){}

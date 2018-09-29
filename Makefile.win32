@@ -14,7 +14,7 @@ CC	= $(CROSS)gcc
 CFLAGS = -O2 -Wall $(DBG)
 CFLAGS += $(shell $(SDL_CONFIG) --cflags)
 #LDFLAGS = $(DBG) -lm $(SDL_BUILD)/build/.libs/SDL.dll
-LDFLAGS = $(shell $(SDL_CONFIG) --libs)
+LDFLAGS = $(shell $(SDL_CONFIG) --libs) -lSDL_image
 
 # ftgrays standalone
 CFLAGS += -D_STANDALONE_

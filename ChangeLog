@@ -1,4 +1,13 @@
 ----------------------------------------------------------------------------
+Paul Wratt (PW) Thu Sep 28 14:29:16 NZST 2018
+paul.wratt@gmail.com
+
+Current version 104.
+
+Applied patches from post SDL2 migration of SDL_Basic.
+
+Added loadtexture and drawtexture functions.
+----------------------------------------------------------------------------
 David Ashley (DA) Tue Sep 29 09:42:22 CDT 2015
 dashxdr@gmail.com
 

@@ -4,7 +4,7 @@
    dashxdr@gmail.com
 */
 #include <string.h>
-#include <SDL.h>
+#include <stdio.h>
 #include <math.h>
 
 #include "misc.h"
@@ -163,7 +163,7 @@ int diff;
 	if(!bc->tainted) return;
 	now=SDL_GetTicks();
 	diff = bc->nextupdate - now;
-	if(diff>0 && diff<250) return;
+	if(diff>0) return;
 	bc->nextupdate=now+20;
 #warning must lock
 	SDL_UpdateRect(bc->thescreen, 0, 0, 0, 0);
@@ -177,7 +177,7 @@ int now;
 	now = SDL_GetTicks();
 	bc->nextupdate = now;
 	update(bc);
-	bc->nextupdate = now+250; // 1/4 second later since we're taking control
+	bc->nextupdate = now + 500; // 1/2 second later since we're taking control
 }
 
 void resetupdate(bc *bc)
@@ -309,7 +309,7 @@ void rendertest(bc *bc)
 	printf("render test!\n");
 FT_Vector points[1024];
 char tags[1024];
-short pathstops[100];
+int pathstops[100];
 int res;
 FT_Raster myraster;
 FT_Raster_Params myparams;

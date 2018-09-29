@@ -9,6 +9,9 @@
 #include <string.h>
 #include <ctype.h>
 #include <stdarg.h>
+#include <stdlib.h>
+#include <stdio.h>
+
 #include "misc.h"
 
 #define NAMELEN 16

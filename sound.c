@@ -5,8 +5,10 @@
 */
 #include <string.h>
 #include <stdlib.h>
-#include "misc.h"
+#include <stdio.h>
 #include <math.h>
+
+#include "misc.h"
 
 #define SAMPLING_RATE 48000
 #define FRAGSIZE (1024)
