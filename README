@@ -72,13 +72,15 @@ move <x>,<y>
 spot
 line <x>,<y>
 NOT IMPLEMENTED:flood <x>,<y> ; does flood fill
-NOT IMPLEMENTED:arc <radius>,<start>,<end> ; in radians
+arc <x>,<y>,<radius>,<angle>,<anglesize> ; in degrees
 NOT IMPLEMENTED: curve <cx>,<cy>,<x>,<y>  ; bezier curve
 rectangle <x1>,<y1>,<width>,<height>
 box <x1>,<y1>,<1/2 width>,<1/2 height>
 rect <x1>,<y1>,<1/2 width>,<1/2 height>
 circle <x1>,<y1>,<radius>
 disc <x1>,<y1>,<radius>
+<var> = loadtexture("<image>")
+drawtexture <var>,<x>,<y>
 NOT IMPLEMENTED:text <x1>,<y1>,<string>
 NOT IMPLEMENTED:randomize
 input variable|string
